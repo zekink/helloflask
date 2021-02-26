@@ -3,7 +3,7 @@
 Extra simple little Flask app to get the hostname and ip address. Based on a few tutorials
 like the one provided by Google for Cloud Run.
 
-Includes a Dockerfile to test with ECS, Cloud Run and whatnot.
+Includes a Dockerfile to test with ECS, Cloud Run and whatnot. Tested with Azure App Services.
 
 ## What Do?
 

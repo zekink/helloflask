@@ -9,5 +9,6 @@ RUN pip install gunicorn
 RUN useradd flaskyboi && chown -R flaskyboi /app
 USER flaskyboi
 ENV PORT 8080
+EXPOSE $PORT
 # gunicorn config, increase workers if using multiple CPU cores
 CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
